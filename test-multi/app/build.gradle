@@ -46,7 +46,7 @@ dependencies {
     compile "org.hibernate:hibernate-core:5.1.2.Final"
     compile "org.hibernate:hibernate-ehcache:5.1.2.Final"
 
-    compile project(":plugin")
+//    compile project(":plugin")
 
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"
@@ -63,9 +63,9 @@ bootRun {
 }
 
 grails {
-//    plugins {
-//        compile project(":plugin")
-//    }
+    plugins {
+        compile project(":plugin")
+    }
 }
 
 assets {
