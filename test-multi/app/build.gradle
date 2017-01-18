@@ -58,6 +58,10 @@ dependencies {
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = gradleWrapperVersion
+}
+
 bootRun {
     jvmArgs('-Dspring.output.ansi.enabled=always')
 }
